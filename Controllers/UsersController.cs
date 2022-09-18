@@ -20,6 +20,7 @@ namespace AppCoreWeb.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            int a;
             var result = _usersService.GetAll();
             return Ok(result);
         }
